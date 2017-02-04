@@ -1,0 +1,48 @@
+.authentication {
+    li {
+        position: relative;
+        height: $authenticationInputHeight;
+        border-bottom: 1px solid $colorGreyLighten;
+        &:last-child {
+            border-bottom: none;
+        }
+        input {
+            @include fontFamilySize(20px);
+            height: 100%;
+            padding: 0 66px;
+            border: none;
+        }
+        label {
+            display: inline-block;
+            margin-left: 22px;
+            @extend .arrow;
+        }
+        &.active-li {
+            border-left: 4px solid $mainColor2;
+        }
+        &.mail label {
+            @include bgPositionWH(-57px, -55px, 21px, 24px);
+        }
+        &.password label {
+            @include bgPositionWH(-31px, -54px, 21px, 24px);
+        }
+    }
+    .buttons {
+        background: $colorDenimLight;
+        @include fontFamilySize(18px, $fontGRBold);
+        text-transform: uppercase;
+        a {
+            position: relative;
+            display: inline-block;
+            @include WH(49%, 100%);
+            white-space: nowrap;
+            &.sign-up {
+                color: desaturate($mainColor1, 8%);
+            }
+            &.sign-in {
+                background: $mainColor1;
+                color: $mainFontColor2;
+            }
+        }
+    }
+}

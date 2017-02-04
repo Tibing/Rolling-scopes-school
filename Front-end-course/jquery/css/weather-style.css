@@ -1,0 +1,203 @@
+.weather-menu button:hover,
+.input-info button:hover,
+.weather-menu .selected-scale,
+.epmty {
+    background: #ff8989;
+    color: #ffffff;
+}
+
+.weather {
+    width: 307px;
+    height: 312px;
+    position: relative;
+}
+
+.weather-menu {
+    height: 64px;
+    background: #ffffff;
+    font-size: 0;
+}
+
+.weather-menu button {
+    transition: background 0.5s;
+    background: #ffffff;
+    color: #dedede;
+    position: relative;
+}
+
+.scale-button {
+    width: 79px;
+    height: 100%;
+    font-size: 40.75px;
+}
+
+.add-place-button {
+    width: 79px;
+    height: 100%;
+}
+
+.add-place-button:before {
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url("../img/weather-spritesheet.png") -6px no-repeat;
+    position: absolute;
+    top: 9px;
+    left: 23px;
+}
+
+.list-view-button {
+    width: 70px;
+    height: 100%;
+}
+
+.list-view-button:before {
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url("../img/weather-spritesheet.png") -55px no-repeat;
+    position: absolute;
+    top: 11px;
+    left: 11px;
+}
+
+.weather-info {
+    width: 240px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 11px;
+    box-sizing: border-box;
+    z-index: 30;
+}
+
+.weather-info p {
+    font-size: 16.75px;
+    letter-spacing: 1px;
+    line-height: 21px;
+}
+
+.weather-info .temperature {
+    font-size: 50px;
+    line-height: 48px;
+    position: relative;
+}
+
+.placeList {
+    overflow: scroll;
+}
+
+.placeList li:not(:first-child){
+    margin-top: 10px;
+    cursor: pointer;
+    width: 210px;
+    padding: 0 15px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+}
+
+.placeList li:last-child{
+    margin-bottom: 15px;
+}
+
+.placeList li:hover:not(:first-child){
+    background: #ffffff;
+    opacity: 0.8;
+}
+
+.input-info,
+.placeList {
+    padding: 10px 30px;
+    height: 248px;
+    width: 307px;
+    position: relative;
+    z-index: 50;
+    background: #05aeb3;
+}
+
+.input-info label{
+    margin-top: 5px;
+    display: block;
+}
+
+.input-info input{
+    height: 25px;
+    padding: 1px 15px;
+    border: 2px solid #076164;
+    border-radius: 10px;
+}
+
+.input-info button {
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    background: #076164;
+    color: #ffffff;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.weather-board {
+    height: 248px;
+    width: 307px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    position: absolute;
+    right: 0;
+    z-index: 40;
+    bottom: 0;
+    height: 16px;
+    padding: 12px 11px 11px 10px;
+}
+
+.slider label {
+    cursor: pointer;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #05aeb3;
+    margin: 0 4px 4px 0;
+}
+
+.slider label:hover {
+    background: #076164;
+}
+
+.slider label:last-child {
+    margin-right: 0;
+}
+
+.slide {
+    width: 307px;
+    height: 248px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    background-size: cover;
+    transition: left 0s .75s;
+    background: url("../img/hue_Saturation .jpg");
+}
+
+[id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 20;
+    transition: left .65s ease-out;
+}
+
+.slide-2 {
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+}
+
+.slide-3 {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}

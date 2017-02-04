@@ -1,0 +1,77 @@
+.converter {
+    .currency {
+        li {
+            border-bottom: 1px solid $colorGreyLighten;
+            position: relative;
+            height: $converterInputHeight;
+            &:last-child {
+                border-bottom: none;
+            }
+            label {
+                display: inline-block;
+                text-align: center;
+                @include WH($converterLabelWidth, $converterLabelHeight);
+                line-height: $converterLabelHeight;
+                border-right: 1px solid $mainFontColor1;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            input {
+                @include fontFamilySize(25px);
+                text-align: right;
+                position: absolute;
+                right: 0;
+                @include WH(155px, 100%);
+                padding: 0 20px;
+                border: none;
+                color: $mainFontColor1;
+            }
+        }
+    }
+    .convert-buttons {
+        background: $mainColor1;
+        li {
+            position: absolute;
+            height: 100%;
+            a {
+                display: block;
+                height: 100%;
+                span {
+                    @extend .arrow;
+                }
+            }
+            &:hover {
+                @extend .active;
+            }
+            &.convert {
+                &:hover {
+                    background: $mainColor1;
+                }
+                width: $converterConvertButtonWidth;
+                span {
+                    left: 35px;
+                    top: 26px;
+                    @include bgPositionWH(0, -10px, 31px, 12px);
+                }
+            }
+            &.add {
+                right: 78px;
+                width: $converterAdd-MoveButtonWidth;
+                span {
+                    right: 18px;
+                    top: 18px;
+                    @include bgPositionWH(-38px, -3px, 27px);
+                }
+            }
+            &.move {
+                right: 0;
+                width: $converterAdd-MoveButtonWidth;
+                span {
+                    right: 17px;
+                    top: 17px;
+                    @include bgPositionWH(-74px, 0px, 33px, 30px);
+                }
+            }
+        }
+    }
+}

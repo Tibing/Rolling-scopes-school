@@ -1,0 +1,513 @@
+.header,
+h3,
+h2 {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-family: "Fjalla One"
+}
+.promo-text a{
+    font-family: "Fjalla One"
+}
+html,
+body {
+    font-family: "Lato";
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 10px;
+}
+
+a,
+header a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+footer a{
+    color: #fff;
+}
+footer {
+    height: 204px;
+    margin-top: -204px;
+    background: #202628;
+}
+
+footer dl * {
+    color: #4d5254;
+    display: inline-block;
+}
+
+footer .mark {
+    color: #bf4239;
+}
+
+footer dd {
+    margin-right: 4px;
+    margin-left: 0;
+}
+
+footer ul {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+}
+
+footer li {
+    font-size: 2rem;
+    display: inline-block;
+    margin: 2px;
+}
+
+.share div {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #e64343;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+
+.main-content {
+    height: auto;
+    min-height: 100%;
+}
+
+.footer_menu {
+    padding-top: 80px;
+}
+
+.footer_menu a {
+    font-size: 1.4rem;
+    color: #e7e7e7;
+    display: inline-block;
+    margin-right: 40px;
+    position: relative;
+}
+
+.footer_menu a:hover,
+.header-menu a.active,
+.header-menu a:hover {
+    background: #e84c3d;
+}
+
+.footer_menu a:not(:first-child)::after {
+    content: '/';
+    color: #4e5456;
+    position: absolute;
+    left: -23px;
+    cursor: default;
+}
+
+dl a:after {
+    content: '/';
+    position: absolute;
+}
+
+.header {
+    height: 80px;
+    background: #202628;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.header_logo {
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 2.5rem;
+    color: #e7e7e7;
+}
+
+.main {
+    padding: 80px 0 204px;
+}
+
+.header-menu {
+    font-size: 0;
+    float: right;
+    height: 100%;
+}
+
+.header-menu a {
+    display: inline-block;
+    padding: 0 20px;
+    height: 100%;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 80px;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.promo-block {
+    position: relative;
+    height: 560px;
+    background: url(photo.jpg) no-repeat 0 0;
+    background-size: cover;
+}
+
+.promo-block_arrow {
+    display: inline-block;
+    width: 33px;
+    height: 69px;
+    background: #e64343;
+    text-align: center;
+    line-height: 79px;
+}
+
+.promo-text {
+    padding-bottom: 60px;
+    color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+}
+
+.promo-text a {
+    font-size: 1.8rem;
+    color: #e64343;
+}
+
+.promo-text h2 {
+    margin: 10px 0;
+    display: block;
+    position: relative;
+}
+
+.promo-text h2 span {
+    border-top: 3px solid #fff;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.promo-text .arrow {
+    display: inline-block;
+    position: relative;
+}
+
+.left_arrow {
+    left: 0;
+    border-radius: 35px 0 0 35px;
+}
+
+.right_arrow {
+    left: 35px;
+    border-radius: 0 35px 35px 0;
+}
+
+.promo-block_arrow:hover {
+    background: magenta;
+}
+
+.promo-block_arrow i {
+    color: #fff;
+    font-size: 2.4rem;
+}
+
+.grey_block {
+    background: #e7e7e7;
+    padding: 20px 0;
+}
+
+.grey_block_list {
+    padding: 0;
+}
+
+.grey_block_list li {
+    width: 33%;
+    float: left;
+}
+
+.grey_block_list .grey_text {
+    float: right;
+    width: 60%;
+    padding-right: 20px;
+}
+
+.grey_block_list .grey_text h3 {
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+dt,
+p,
+a,
+address {
+    font-size: 1.6rem;
+}
+
+.link,
+.contacts h4 {
+    color: #e64343;
+}
+
+.grey_block_list .ico {
+    background: #e64343;
+    float: left;
+    margin: 40px 0 0;
+    font-size: 3rem;
+}
+
+.ico {
+    width: 69px;
+    height: 69px;
+    border-radius: 69px;
+    text-align: center;
+    line-height: 69px;
+    color: #fff;
+}
+
+.info-section {
+    padding: 20px 0;
+    position: relative;
+}
+
+.info {
+    float: left;
+    width: 780px;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+p {
+    color: #000000;
+    font-size: 1.6rem;
+}
+
+.tagline p {
+    color: #ffffff;
+}
+
+.info h4 {
+    color: #d6443a;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d6d6d6 transparent;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.info article {
+    position: relative;
+    height: 220px;
+    margin: 10px 0;
+    width: 49%;
+    display: inline-block;
+}
+
+.info article p {
+    padding-right: 50px;
+}
+
+article .button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.button {
+    font-size: 1.7rem;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 100px;
+    display: inline-block;
+    background: #e64c3e;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background: #000;
+}
+
+.info h5 {
+    font-size: 1.6rem;
+    margin: 15px 0;
+}
+
+.info-section img {
+    margin: 24px 0;
+    float: right;
+    border: 1px solid black;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.input-section .wrapper {
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 45px 30px;
+    position: relative;
+    background: #e64c3e;
+    height: 190px;
+    color: #ffffff;
+}
+
+.tagline {
+    float: left;
+    width: 440px;
+    position: relative;
+}
+
+.input-section h3 {
+    margin: 0;
+}
+
+.user {
+    float: left;
+    width: 100px;
+    height: 100%;
+}
+
+.user .ico {
+    background: #1f2426;
+    font-size: 3rem;
+}
+
+.input-mail {
+    float: right;
+    width: 510px;
+    display: inline-block;
+}
+
+form {
+    margin-top: 16px;
+    position: relative;
+}
+
+input[name="mail"] {
+    width: 310px;
+    margin-right: 5px;
+}
+
+input {
+    padding: 0 10px;
+    border-radius: 100px;
+    height: 40px;
+}
+
+.button,
+.promo-block_arrow,
+a {
+    cursor: pointer;
+}
+
+.input-mail button {
+    background: #000;
+    height: 100%;
+}
+
+.input-mail button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.live-section {
+    padding: 45px;
+}
+
+.live-section .wrapper > div {
+    margin-right: 20px;
+    vertical-align: top;
+    width: 360px;
+    display: inline-block;
+}
+
+.live-section ul {
+    padding-left: 0;
+}
+
+.live-section li {
+    padding: 30px 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e6e6e6 transparent;
+}
+
+.comments .ico {
+    float: left;
+}
+
+.text-block {
+    display: inline-block;
+    width: 260px;
+    padding-left: 25px;
+}
+
+.comments p {
+    margin: 0;
+}
+
+.contacts li span {
+    vertical-align: top;
+    display: inline-block;
+    width: 65px;
+}
+
+.contacts li div {
+    display: inline-block;
+    width: 235px;
+}
+
+.contacts i {
+    font-size: 3rem;
+}
+
+.contacts h4 {
+    margin: 5px 0;
+}
+
+.input-query form {
+    background-color: #e6e6e6;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.input-query input {
+    margin-top: 20px;
+    width: 85%;
+}
+
+.input-query p {
+    margin: 1px 0;
+}
+
+.input-query input:last-of-type {
+    border-radius: 15px;
+    height: 90px;
+}
+
+.input-query button {
+    margin-top: 25px;
+}
+
+.input-mail button {}
+
+.address-block a {
+    display: block;
+    color: inherit;
+}

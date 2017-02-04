@@ -1,0 +1,22 @@
+.calendar-block {
+    padding: 24px;
+    background: #4cd9c0;
+    position: absolute;
+    right: 58px;
+    box-sizing: border-box;
+    font-size: 28px;
+}
+
+.calendar-block label{
+    display: inline-block;
+    height: 50px;
+}
+
+.calendar-block input{
+    border-radius: 12px;
+    padding: 0 15px;
+    height: 50px;
+    width: 200px;
+    line-height: 50;
+    font-size: 22px;
+}

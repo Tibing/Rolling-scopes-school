@@ -1,0 +1,47 @@
+$grid-gutter-width: 30px;
+$container-large-desktop: (1170px + $grid-gutter-width);
+$link-color: #ffffff;
+$mainColor: #e84c3d;
+$font-size-h3: 21px;
+$font-size-h4: 20px;
+$font-size-h4: 16px;
+$gray: #767c7e;
+
+$navbar-height:80px;
+$navbar-default-bg:#000000;
+$navbar-default-border: none;
+$navbar-default-link-color:#ffffff;
+$navbar-default-link-hover-color:#ffffff;
+$navbar-default-link-hover-bg:$mainColor;
+$navbar-default-link-active-color:#ffffff;
+$navbar-default-link-active-bg:$mainColor;
+$font-size-large: 20px;
+
+
+$btn-default-bg: $mainColor;
+$btn-default-color: #ffffff;
+$btn-default-border: transparent;
+$btn-border-radius-base: 100px;
+$padding-base-vertical: 0;
+$padding-base-horizontal: 20px;
+$padding-large-vertical:0;
+$padding-large-horizontal:0;
+$btn-border-radius-large: 50%;
+$bs-height-base: 42px;
+
+
+$input-height-base: 42px;
+$input-border-radius: 100px;
+$font-size-large: 25px;
+
+@font-face {
+    font-family: 'Lato';
+    src: url("https://fontlibrary.org/face/lato");
+}
+@font-face {
+    font-family: 'Fjalla One';
+    src: url("https://fonts.googleapis.com/css?family=Fjalla+One");
+}
+
+$font-family-base: "Lato";
+$font-family-fjalla-one: "Fjalla One";

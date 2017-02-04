@@ -1,0 +1,75 @@
+$fontGRMedium:"GothamRounded-Medium";
+$fontGRBook:"GothamRounded-Book";
+$fontGRBold:"GothamRounded-Bold";
+
+$fontList: $fontGRMedium $fontGRBook $fontGRBold;
+$listTrack: -moz-range-track -webkit-slider-runnable-track -ms-track;
+$listThumb: -moz-range-thumb -webkit-slider-thumb -ms-thumb;
+
+$colorDenim:#526e82;
+$colorDenimLight: lighten($colorDenim, 10%);
+$colorWhite: #ffffff;
+$colorMonaLisa:#ff8989;
+$colorGrey: #9d9d9d;
+$colorGreyLighten: lighten($colorGrey, 30%);
+$colorBlue:#4cd9c0;
+$colorBlueLight:lighten($colorBlue, 10%);
+
+$mainColor1:$colorDenim;
+$mainColor2:$colorMonaLisa;
+$mainColor3:$colorBlue;
+$mainColor4:$colorWhite;
+
+
+$lightenMainColor1: lighten($mainColor1, 30%);
+$lightenMainColor3: lighten($mainColor3, 25%);
+$darkenMainColor3:darken($mainColor3, 35%);
+$darkerMainColor3:darken($mainColor3, 15%);
+
+$mainFontColor1:$colorGrey;
+$mainFontColor2:$colorWhite;
+
+
+$widgetWidth: 307px;
+$globalMarging: 60px;
+$buttonsHeight: 64px;
+
+$converterInputHeight: 110px;
+$converterLabelHeight: 54px;
+$converterLabelWidth: 102px;
+$converterConvertButtonWidth: 102px;
+$converterAdd-MoveButtonWidth: 64px;
+
+$calendarHeight: 85px;
+$calendarTrThHeight: 55px;
+$calendarTrHeight: 45px;
+$calendarDataLinkHeight: 30px;
+
+$weatherHeight: 248px;
+$weatherWidth: 307px;
+$weatherSlidersPointer: 8px;
+$weatherButtonWidth: 76px;
+
+$playerWidth:728px;
+$playerHeight:201px;
+$playerAlbumImgWH:126px;
+$plyerFollowWidth: 125px;
+$plyerFollowHeight: 40px;
+$playerTimeLineWidth: 488px;
+$playerTimeLineHeight: 9px;
+$playerButtonWH: 45px;
+
+$authenticationInputHeight: 73px;
+
+$messengerButtonWidth: 75px;
+$messengerUserImgWH: 50px;
+$messengerMessageInfoWidth: 190px;
+$messengerStatusWH: 8px;
+
+$diffButtonsHeight: 200px;
+$diffButtonsRadioOuterWH: 42px;
+$diffButtonsRadioInnerWH: 28px;
+$diffButtonsCheckboxWH: 51px;
+$diffButtonsRangeWidth: 211px;
+$diffButtonsRangeTrackHeight: 8px;
+$diffButtonsRangeThumbWH: 18px;

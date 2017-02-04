@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forms and widgets</title>
+    <link rel="stylesheet" href="forms.css" type="text/css">
+</head>
+
+<body>
+    <div class="converter wrapper">
+        <form action="">
+            <ul class="currency">
+                <li>
+                    <label class="middle" for="">usd</label>
+                    <input class="middle" placeholder="356.3" type="text">
+                </li>
+                <li>
+                    <label class="middle" for="">gbp</label>
+                    <input class="middle" placeholder="156.3" type="text">
+                </li>
+            </ul>
+        </form>
+        <div class="buttons convert-buttons">
+            <ul>
+                <li class="convert active">
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </li>
+                <li class="add">
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </li>
+                <li class="move">
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="calendar wrapper">
+        <header>
+            <a href="#" class="arrow arrow-left"></a>
+            <div class="data">
+                <h3 class="year">2012</h3>
+                <h3 class="month">july</h3>
+            </div>
+            <a href="#" class="arrow arrow-right"></a>
+        </header>
+        <table>
+            <tr>
+                <th>s</th>
+                <th>m</th>
+                <th>t</th>
+                <th>w</th>
+                <th>t</th>
+                <th>f</th>
+                <th>s</th>
+            </tr>
+            <tr>
+                <td><a href="#"><span>1</span></a></td>
+                <td><a href="#"><span>2</span></a></td>
+                <td><a href="#"><span>3</span></a></td>
+                <td><a href="#"><span>4</span></a></td>
+                <td><a href="#"><span>5</span></a></td>
+                <td><a href="#"><span>6</span></a></td>
+                <td><a href="#"><span>7</span></a></td>
+            </tr>
+            <tr>
+                <td><a href="#"><span>8</span></a></td>
+                <td><a href="#"><span>9</span></a></td>
+                <td><a href="#"><span>10</span></a></td>
+                <td><a href="#"><span>11</span></a></td>
+                <td><a href="#"><span>12</span></a></td>
+                <td><a href="#"><span>13</span></a></td>
+                <td><a href="#"><span>14</span></a></td>
+            </tr>
+            <tr>
+                <td><a href="#"><span>15</span></a></td>
+                <td><a href="#"><span>16</span></a></td>
+                <td><a href="#"><span>17</span></a></td>
+                <td><a href="#"><span>18</span></a></td>
+                <td><a href="#"><span>19</span></a></td>
+                <td><a href="#"><span>20</span></a></td>
+                <td><a href="#"><span>21</span></a></td>
+            </tr>
+            <tr>
+                <td><a href="#"><span>22</span></a></td>
+                <td><a href="#"><span>23</span></a></td>
+                <td><a href="#"><span>24</span></a></td>
+                <td><a href="#"><span>25</span></a></td>
+                <td><a href="#"><span>26</span></a></td>
+                <td><a href="#"><span>27</span></a></td>
+                <td><a href="#"><span>28</span></a></td>
+            </tr>
+            <tr>
+                <td><a href="#"><span>29</span></a></td>
+                <td><a href="#"><span>30</span></a></td>
+                <td><a href="#"><span>31</span></a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="weather wrapper">
+        <div class="sliders-block">
+            <div class="weather-info">
+                <p>73</p>
+                <span>&#176</span>
+                <p>Zagora, Greece</p>
+                <time>8:34 am</time>
+            </div>
+            <input type="radio" name="slider" id="slider1" checked="checked">
+            <label for="slider1"></label>
+            <img src="img1.png" alt="local photo">
+            <input type="radio" name="slider" id="slider2">
+            <label for="slider2"></label>
+            <img src="img2.jpg" alt="local photo">
+            <input type="radio" name="slider" id="slider3">
+            <label for="slider3"></label>
+            <img src="img3.jpg" alt="local photo">
+        </div>
+        <div class="buttons weather-buttons clearfix">
+            <ul>
+                <li class="fahrenheit active">
+                    <a href="#">F</a>
+                </li>
+                <li class="celsius">
+                    <a href="#">C</a>
+                </li>
+                <li class="add">
+                    <a href="#">
+                        <span class="center"></span>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="#">
+                        <span class="center"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="player wrapper">
+        <div class="album-info">
+            <img src="picture-album.png" alt="albums picture">
+            <div class="follow-button">
+                <a href="#">follow</a>
+            </div>
+        </div>
+        <div class="music-block">
+            <div class="song-info">
+                <h4 class="performer">Faded Paper figures</h4>
+                <h5 class="song">Invent it all again</h5>
+            </div>
+            <div class="music">
+                <div class="all-time">
+                    <div class="uploaded-time" style="width:85%"></div>
+                    <div class="played-time" style="width:70%"></div>
+                </div>
+                <p class="left-time">-1:57</p>
+                <div class="music-buttons">
+                    <div class="play-stop">
+                        <a href="#" class="stop">
+                            <span></span>
+                        </a>
+                        <a href="#" class="play">
+                            <span></span>
+                        </a>
+                    </div>
+                    <a href="#" class="previous">
+                        <span></span>
+                    </a>
+                    <a href="#" class="next">
+                        <span></span>
+                    </a>
+                    <a href="#" class="shuffle">
+                        <span></span>
+                    </a>
+                    <a href="#" class="repeat">
+                        <span></span>
+                    </a>
+                    <a href="#" class="heart">
+                        <span></span>
+                    </a>
+                    <a href="#" class="add">
+                        <span></span>
+                    </a>
+                    <a href="#" class="share">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="authentication wrapper">
+        <ul>
+            <li class="mail active-li">
+                <label for="" class="middle"></label>
+                <input type="text" placeholder="Email Address...">
+            </li>
+            <li class="password">
+                <label for="" class="middle"></label>
+                <input type="text" placeholder="Password...">
+            </li>
+        </ul>
+        <div class="buttons">
+            <a href="" class="sign-up">
+                <span class="center">sign up</span>
+            </a>
+            <a href="" class="sign-in">
+                <span class="center">sign in</span>
+            </a>
+        </div>
+    </div>
+    <div class="messenger wrapper">
+        <header class="buttons">
+            <a href="#" class="menu">
+                <span class="center"></span>
+            </a>
+            <a href="#" class="add">
+                <span class="center"></span>
+            </a>
+        </header>
+        <ul class="chat">
+            <li class="user1">
+                <a href="#">
+                    <img src="user.jpg" alt="photo of user1" class="middle">
+                </a>
+                <div class="preview">
+                    <div class="name">Yaroslav Lozhkin</div>
+                    <p>Allright got it!</p>
+                </div>
+                <span class="status online middle"></span>
+            </li>
+            <li class="user2">
+                <a href="#">
+                    <img src="user.jpg" alt="photo of user2" class="middle">
+                </a>
+                <div class="preview">
+                    <div class="name">Michel Zenaty</div>
+                    <p class="sent">Sent</p>
+                </div>
+                <span class="status offline middle"></span>
+            </li>
+            <li class="user3">
+                <a href="#">
+                    <img src="user.jpg" alt="photo of user3" class="middle">
+                </a>
+                <div class="preview">
+                    <div class="name">Weells Riley</div>
+                    <p class="typing"></p>
+                </div>
+                <span class="status middle"></span>
+            </li>
+            <li class="user4">
+                <a href="#">
+                    <img src="user.jpg" alt="photo of user3" class="middle">
+                </a>
+                <div class="preview">
+                    <div class="name">Matt Vicherms</div>
+                    <p class="not-delivered">Not delivered</p>
+                </div>
+                <span class="status middle"></span>
+            </li>
+            <li class="user5">
+                <a href="#">
+                    <img src="user.jpg" alt="photo of user4" class="middle">
+                </a>
+                <div class="preview">
+                    <div class="name">Divya Manian</div>
+                    <p>You can download it on github or go</p>
+                </div>
+                <span class="status busy middle"></span>
+            </li>
+            <li class="user6">
+                <a href="#">
+                    <img src="user.jpg" alt="photo of user6" class="middle">
+                </a>
+                <div class="preview">
+                    <div class="name">Vin Thomas</div>
+                    <p>Thank you!</p>
+                </div>
+                <span class="status middle"></span>
+            </li>
+        </ul>
+    </div>
+    <div class="dif-buttons wrapper">
+        <input type="text" class="valid" value="Valid input">
+        <input type="checkbox" class="checkbox center" id="checkbox">
+        <label for="checkbox">
+            <span></span>
+        </label>
+        <input type="range" class="range" min="0" max="100" value="70" name="range" />
+        <input type="radio" name="radio-button1" class="radio radio1" id="radio1">
+        <label for="radio1">
+            <span class="center"></span>
+        </label>
+        <input type="text" class="invalid" value="invalid input">
+        <input type="radio" name="radio-button2" class="radio radio2" id="radio2">
+        <label for="radio2">
+            <span class="center"></span>
+        </label>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+.player {
+    @include WH($playerWidth, $playerHeight);
+    .album-info {
+        display: inline-block;
+        padding: 8px;
+        img {
+            @include WH($playerAlbumImgWH);
+        }
+        .follow-button {
+            position: relative;
+            font-family: $fontGRBold;
+            text-transform: uppercase;
+            line-height: 40px;
+            color: $mainFontColor2;
+            @include WH($plyerFollowWidth, $plyerFollowHeight);
+            background: $mainColor1;
+            margin-top: 10px;
+            &:before {
+                position: relative;
+                content: '';
+                left: 15px;
+                display: inline-block;
+                @include bgPositionWH(-2px, -36px, 13px);
+                @extend .arrow;
+            }
+            a {
+                position: absolute;
+                left: 0;
+                right: 0;
+                padding-left: 35px;
+                display: inline-block;
+            }
+        }
+    }
+    .music-block {
+        display: inline-block;
+        font-family: $fontGRBook;
+        padding-left: 10px;
+        vertical-align: top;
+        .song-info {
+            .performer {
+                margin-top: 25px;
+                font-size: 23px;
+                margin-bottom: 0;
+            }
+            .song {
+                @extend .performer;
+                margin-top: 0;
+                color: $lightenMainColor1;
+            }
+        }
+        .music {
+            div[class$='time'] {
+                @include border-radius(5px);
+            }
+            .all-time {
+                position: relative;
+                display: inline-block;
+                @include WH($playerTimeLineWidth, $playerTimeLineHeight);
+                background: $colorGreyLighten;
+                div {
+                    position: absolute;
+                    height: 100%;
+                    &.uploaded-time {
+                        background: $lightenMainColor3;
+                    }
+                    &.played-time {
+                        background: $mainColor3;
+                    }
+                }
+            }
+            .left-time {
+                padding-left: 20px;
+                display: inline-block;
+            }
+            .music-buttons {
+                margin-top: 10px;
+                position: relative;
+                height: $playerButtonWH;
+                .play-stop {
+                    position: relative;
+                    .play {
+                        background: $mainColor3;
+                        span {
+                            @include bgPositionWH(-22px, -36px, 13px, 15px);
+                        }
+                        &:hover {
+                            display: none;
+                        }
+                    }
+                    .stop {
+                        background: $mainColor3;
+                        span {
+                            background: $mainColor4;
+                            @include WH(15px);
+                        }
+                    }
+                    & ~ a span {
+                        @include WH(23px, 18px);
+                        position: absolute;
+                    }
+                }
+                a {
+                    box-sizing: border-box;
+                    position: absolute;
+                    display: inline-block;
+                    @include WH($playerButtonWH);
+                    @include border-radius();
+                    &:hover {
+                        border: 3px solid $mainColor3;
+                    }
+                    span {
+                        @extend .center;
+                        @extend .arrow;
+                    }
+                    &.previous {
+                        @include musicButton(70px, -39px);
+                    }
+                    &.next {
+                        @include musicButton(70px*2, -67px);
+                    }
+                    &.shuffle {
+                        @include musicButton(70px*3, -95px);
+                    }
+                    &.repeat {
+                        @include musicButton(70px*4, -122px, -36px);
+                    }
+                    &.heart {
+                        @include musicButton(70px*5, -151px, -36px);
+                    }
+                    &.add {
+                        @include musicButton(70px*6, -181px, -33px);
+                        span {
+                            height: 23px;
+                        }
+                    }
+                    &.share {
+                        @include musicButton(490px, -191px, -57px);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+}
+
+#search {
+	border-radius: 8px;
+}
+
+.search-section {
+	width: 250px;
+	margin-bottom: 20px;
+}
+
+.component {
+	width: 220px;
+	margin: 0;
+	font-size: 14px;
+	box-shadow: 0 0 40px 1px #ffffff;
+}
+
+.component img,
+.coverPreview {
+	height: 130px;
+}
+
+.slide {
+	margin: 20px 0;
+}
+
+.component h3 {
+	padding: 5px;
+	height: 30px;
+	width: 95%;
+	font-size: 13px;
+}
+
+.coverPreview {
+	background: transparent;
+}
+
+.coverPreview i{
+	display: none;
+}
+
+#description {
+	display: none;
+}
+
+.paging li {
+	font-size: 12px;
+	line-height: 17px;
+	width: 17px;
+	height: 17px;
+}
+
+#info li p{
+	width: 140px;
+	overflow: hidden;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+#pages {
+	margin-bottom: 15px;
+}

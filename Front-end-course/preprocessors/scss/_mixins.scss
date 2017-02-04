@@ -1,0 +1,58 @@
+@mixin WH($width, $height:$width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin checkinput($color) {
+    border: 2px solid $color;
+    color: $color;
+    vertical-align: top;
+    padding: 0 14px;
+    @include WH(210px, 51px);
+    border-radius: 15px;
+}
+
+@mixin transformCenter {
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@mixin textCenter {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@mixin fontFamilySize($size, $family:$fontGRBook) {
+    font: {
+        family: $family;
+        size: $size;
+    }
+}
+
+@mixin bgPositionWH($x, $y, $width, $height:$width) {
+    @include WH($width, $height);
+    background-position: $x $y;
+}
+
+@mixin musicButton($left, $x, $y:-35px) {
+    left: $left;
+    span {
+        background-position: $x $y;
+    }
+}
+
+@mixin mesPreview($width, $x, $y) {
+    @include bgPositionWH($x, $y, $width, 9px);
+    content: '';
+    position: relative;
+    display: inline-block;
+    margin-right: 7px;
+    @extend .arrow;
+}
+@mixin border-radius($radius:50%) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
+}

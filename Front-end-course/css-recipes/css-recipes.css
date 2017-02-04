@@ -1,0 +1,252 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans';
+    position: relative;
+    min-height: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    border: 2px solid #4c5eab;
+}
+
+a {
+    cursor: pointer;
+    color: inherit;
+}
+
+header {
+    position: relative;
+    height: 250px;
+    background: #4c5eab;
+    color: #fff;
+    padding-left: 60px;
+}
+
+.profile {
+    position: relative;
+    display: inline-block;
+    width: 75%;
+    height: 100%;
+}
+
+.vertikal-align,
+.wrapper h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.profile img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.person p {
+    display: block;
+    margin: 6px 0 2px 180px;
+}
+
+.name {
+    font-size: 40px;
+    font-family: 'Montserrat Bold';
+}
+
+.position {
+    font-size: 25px;
+}
+
+.contact i {
+    position: absolute;
+    margin-top: 8px;
+}
+
+.contact p,
+.contact a {
+    left: 20px;
+    font-size: 20px;
+    display: inline-block;
+    margin: 5px 35px 5px 35px;
+}
+
+.contact {
+    display: inline-block;
+    width: 25%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+main {
+    position: relative;
+    border-left: 320px solid #fff;
+    padding-bottom: 70px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.info {
+    float: left;
+    width: 260px;
+    margin-left: -320px;
+    padding-left: 45px;
+    box-shadow: -180px 0 100px #efefef inset;
+}
+
+h3 {
+    font-size: 22px;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.figures {
+    padding: 0 0 20px 60px;
+    position: relative;
+    width: 100%;
+}
+
+.portfolio { 
+    padding-left: 10px;
+}
+
+.container {
+    position: relative;
+}
+
+.portfolio .wrapper {
+    padding-top: 30px;
+}
+
+main i {
+    position: absolute;
+    top: 17px;
+    left: 22px;
+}
+
+li i {
+    top: 16px;
+    left: 14px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    position: relative;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.wrapper span {
+    background: #4c5eab;
+    display: inline-block;
+}
+
+li span {
+    display: block;
+    border: 8px solid #4c5eab;
+    margin: 10px 5px 0 5px;
+}
+
+li p {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+.info >div {
+    padding-top: 30px;
+    width: 250px;
+}
+
+.element {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 7px solid #7b8f8e;
+}
+
+.ref {
+    position: relative;
+    margin-top: 30px;
+}
+
+.ref p:nth-child(2) {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+.reference p> span {
+    display: block;
+}
+
+.reference a {
+    color: #4c5eab;
+}
+
+figure {
+    margin: 10px 7px;
+    box-shadow: 0 0 30px #dfdfdf;
+}
+
+figcaption {
+    width: 240px;
+    height: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+}
+
+figcaption p {
+    margin: 0;
+}
+
+.portfolio img {
+    width: 240px;
+    height: 165px;
+}
+
+.portfolio a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+figure:hover,
+.wrapper .icon:hover {
+    box-shadow: 0 0 30px #4c5eab;
+}
+
+footer {
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    background: #4d5fab;
+}
+
+footer p {
+    margin: 30px 60px;
+}
+
+.clear {
+    clear: both;
+}

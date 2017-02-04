@@ -1,0 +1,96 @@
+.messenger {
+    header {
+        background: $mainColor3;
+        a {
+            &.menu {
+                display: inline-block;
+                @include WH($messengerButtonWidth, 100%);
+                position: absolute;
+                background: $darkerMainColor3;
+                span {
+                    @extend .arrow;
+                    @include bgPositionWH(-89px, -55px, 33px, 25px);
+                }
+            }
+            &.add {
+                right: 0;
+                display: inline-block;
+                @include WH($messengerButtonWidth, 100%);
+                position: absolute;
+                &:hover {
+                    background: $darkerMainColor3;
+                }
+                span {
+                    @extend .arrow;
+                    @include bgPositionWH(-125px, -55px, 33px, 25px);
+                }
+            }
+        }
+    }
+    .chat {
+        li {
+            position: relative;
+            display: block;
+            border-bottom: 1px solid $colorGreyLighten;
+            &:last-child {
+                border-bottom: none;
+            }
+            .user {
+                display: block;
+                @include WH($messengerUserImgWH);
+                margin-left: 16px;
+                img {
+                    box-sizing: border-box;
+                    height: 100%;
+                    @include border-radius();
+                    &:hover {
+                        border: 2px solid $colorBlueLight;
+                    }
+                }
+            }
+            .preview {
+                font-size: 18px;
+                width: $messengerMessageInfoWidth;
+                margin-left: 85px;
+                padding-top: 20px;
+                padding-bottom: 14px;
+                display: block;
+                p {
+                    @include fontFamilySize(14px);
+                    margin: 5px 0;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    &.sent:before {
+                        @include mesPreview(14px, -159px, -66px);
+                    }
+                    &.not-delivered:before {
+                        @include mesPreview(9px, -177px, -65px);
+                    }
+                    &.typing:before {
+                        content: 'Typing...';
+                    }
+                }
+            }
+            span {
+                right: 0;
+                display: inline-block;
+                @include WH($messengerStatusWH);
+                @include border-radius();
+                margin-right: 16px;
+                &.online {
+                    background: $mainColor3;
+                }
+                &.offline {
+                    background: $mainColor2;
+                }
+                &.busy {
+                    background: saturate($mainColor3, 20%);
+                }
+            }
+            &:hover {
+                background: $lightenMainColor3;
+            }
+        }
+    }
+}

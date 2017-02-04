@@ -1,0 +1,89 @@
+.dif-buttons {
+    height: $diffButtonsHeight;
+    @include fontFamilySize(20px);
+    box-sizing: border-box;
+    padding: 12px;
+    * {
+        box-sizing: border-box;
+    }
+    .valid {
+        @include checkinput($mainColor3);
+    }
+    .invalid {
+        @include checkinput($mainColor2);
+    }
+    input[type="radio"] {
+        display: none;
+        & + label {
+            margin-left: 19px;
+            position: relative;
+            display: inline-block;
+            @include WH($diffButtonsRadioOuterWH);
+            @include border-radius();
+        }
+        &.radio1 + label {
+            margin-bottom: 8px;
+            border: 2px solid $mainColor2;
+        }
+        &.radio1:checked + label > span {
+            background: $mainColor2;
+        }
+        &.radio2 + label {
+            margin-top: 5px;
+            border: 2px solid $mainColor3;
+        }
+        &.radio2:checked + label > span {
+            background: $mainColor3;
+        }
+        &:checked + label > span {
+            position: absolute;
+            display: inline-block;
+            @include WH($diffButtonsRadioInnerWH);
+            @include border-radius();
+        }
+    }
+    .checkbox {
+        display: none;
+        & + label {
+            margin-left: 16px;
+            position: relative;
+            display: inline-block;
+            @include WH($diffButtonsCheckboxWH);
+            @include border-radius(15px);
+            border: 2px solid $mainColor2;
+        }
+        &:checked + label > span {
+            left: 11px;
+            top: 15px;
+            @include bgPositionWH(-1px, -56px, 27px, 18px);
+        }
+        & + label > span {
+            @extend .arrow;
+        }
+    }
+    .range {
+        cursor: pointer;
+        width: $diffButtonsRangeWidth;
+        margin: 24px 0;
+        @each $track in $listTrack {
+            &::#{$track} {
+                height: $diffButtonsRangeTrackHeight;
+                background: $lightenMainColor1;
+                @include border-radius(20px);
+            }
+        }
+        @each $thumb in $listThumb {
+            &::#{$thumb} {
+                @include WH($diffButtonsRangeThumbWH);
+                background: $mainColor1;
+                @include border-radius();
+                border: none;
+            }
+        }
+        &::-moz-range-progress {
+            height: $diffButtonsRangeTrackHeight;
+            background: $mainColor1;
+            @include border-radius(20px);
+        }
+    }
+}

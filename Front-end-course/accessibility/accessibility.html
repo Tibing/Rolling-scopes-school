@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forms and widgets</title>
+    <link rel="stylesheet" href="accessibility.css" type="text/css">
+</head>
+
+<body>
+<div>Forms and widgets</div>
+<div class="converter wrapper">
+<h2 tabindex="0" class="wcag-hidden">Converter widget</h2>
+        <form action="">
+            <ul class="currency" role="presentation">   
+                <li>
+                    <label class="middle" id="USDlabel" for="USDvalue">usd</label>
+                    <input class="middle" placeholder="356.3" id="USDvalue" aria-labelledby="USDlabel" aria-describedby="description" type="text">
+                </li>
+                <li>
+                    <label class="middle" id="GBPlabel" for="GBPvalue">gbp</label>
+                    <input class="middle" placeholder="156.3" id="GBPvalue" aria-labelledby="GBPlabel" aria-describedby="description" type="text">
+                </li>
+            </ul>
+            <div id="description">Input value</div>
+        </form>
+        <div class="buttons convert-buttons">
+            <ul role="presentation">
+                <li class="convert active">
+                    <a href="#" title="Covert" role="button">
+                        <span></span>
+                    </a>
+                </li>
+                <li class="add">
+                    <a href="#" title="Add currency" role="button">
+                        <span></span>
+                    </a>
+                </li>
+                <li class="move">
+                    <a href="#" title="Move input blocks" role="button">
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="calendar wrapper">
+        <h2 tabindex="0" class="wcag-hidden">Calendar widget</h2>
+        <header>
+            <div class="data" tabindex="0">
+                <p class="year">2012</p>
+                <p class="month">july</p>
+            </div>
+            <a href="#" class="arrow arrow-left" title="Previous month"></a>
+            <a href="#" class="arrow arrow-right" title="Next month"></a>
+        </header>
+        <table role="presentation">
+            <tr>
+                <th>s</th>
+                <span id="sun">Sunday</span>
+                <th>m</th>
+                <span id="mon">Monday</span>
+                <th>t</th>
+                <span id="tue">Tuesday</span>
+                <th>w</th>
+                <span id="wed">Wednesday</span>
+                <th>t</th>
+                <span id="thu">Thursday</span>
+                <th>f</th>
+                <span id="fri">Friday</span>
+                <th>s</th>
+                <span id="sat">Saturday</span>
+            </tr>
+            <tr>
+                <td><a href="#" aria-describedby="sun">1</a></td>
+                <td><a href="#" aria-describedby="mon">2</a></td>
+                <td><a href="#" aria-describedby="tue" class="active" aria-selected="true">3</a></td>
+                <td><a href="#" aria-describedby="wed">4</a></td>
+                <td><a href="#" aria-describedby="thu">5</a></td>
+                <td><a href="#" aria-describedby="fri">6</a></td>
+                <td><a href="#" aria-describedby="sat">7</a></td>
+            </tr>
+            <tr>
+                <td><a href="#" aria-describedby="sun">8</a></td>
+                <td><a href="#" aria-describedby="mon">9</a></td>
+                <td><a href="#" aria-describedby="tue">10</a></td>
+                <td><a href="#" aria-describedby="wed">11</a></td>
+                <td><a href="#" aria-describedby="thu">12</a></td>
+                <td><a href="#" aria-describedby="fri">13</a></td>
+                <td><a href="#" aria-describedby="sat">14</a></td>
+            </tr>
+            <tr>
+                <td><a href="#" aria-describedby="sun">15</a></td>
+                <td><a href="#" aria-describedby="mon">16</a></td>
+                <td><a href="#" aria-describedby="tue">17</a></td>
+                <td><a href="#" aria-describedby="wed">18</a></td>
+                <td><a href="#" aria-describedby="thu">19</a></td>
+                <td><a href="#" aria-describedby="fri">20</a></td>
+                <td><a href="#" aria-describedby="sat">21</a></td>
+            </tr>
+            <tr>
+                <td><a href="#" aria-describedby="sun">22</a></td>
+                <td><a href="#" aria-describedby="mon">23</a></td>
+                <td><a href="#" aria-describedby="tue">24</a></td>
+                <td><a href="#" aria-describedby="wed">25</a></td>
+                <td><a href="#" aria-describedby="thu">26</a></td>
+                <td><a href="#" aria-describedby="fri">27</a></td>
+                <td><a href="#" aria-describedby="sat">28</a></td>
+            </tr>
+            <tr>
+                <td><a href="#" aria-describedby="sun">29</a></td>
+                <td><a href="#" aria-describedby="mon">30</a></td>
+                <td><a href="#" aria-describedby="tue">31</a></td>
+            </tr>
+        </table>
+    </div>
+    
+
+
+
+
+
+
+    <div class="weather wrapper">
+    <h2 tabindex="0" class="wcag-hidden">Weather widget</h2>
+        <div class="sliders-block" id="weather-info1">
+            <div class="weather-info1">
+                <p>73</p>
+                <span>&#176</span>
+                <p>Zagora, Greece</p>
+                <time>8:34 am</time>
+            </div>
+            <span class="wcag-hidden">If you want to see another place click button Alt</span>
+            <input type="radio" name="slider" id="slider1" checked="checked">
+            <label for="slider1"></label>
+            <img src="img1.png" alt="local photo 1" aria-describedby="weather-info1" tabindex="0">
+            <input type="radio" name="slider" id="slider2">
+            <label for="slider2"></label>
+            <img src="img2.jpg" alt="local photo 2">
+            <input type="radio" name="slider" id="slider3">
+            <label for="slider3"></label>
+            <img src="img3.jpg" alt="local photo 3">
+
+        </div>
+
+        <div class="buttons weather-buttons clearfix">
+            <ul role="presentation">
+                <li class="fahrenheit active">
+                    <a href="#" aria-label="fahrenheit active" role="button">F</a>
+                </li>
+                <li class="celsius">
+                    <a href="#" aria-label="celsius" role="button">C</a>
+                </li>
+                <li class="add">
+                    <a href="#" title="add city" role="button">
+                        <span class="center"></span>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="#" title="weather-menu" role="button">
+                        <span class="center"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <div class="player wrapper">
+    <h2 tabindex="0" class="wcag-hidden">Player widget</h2>
+        <div class="album-info">
+            <img src="picture-album.png" alt="picture of the album">
+            <div class="follow-button">
+                <a href="#" role="button">follow</a>
+            </div>
+        </div>
+        <div class="music-block">
+            <div class="song-info" tabindex="0">
+                <h4 class="performer">Faded Paper figures</h4>
+                <h5 class="song">Invent it all again</h5>
+            </div>
+            <div class="music">
+                <div class="all-time" tabindex="0" aria-labelledby="rewindInstruction">
+                    <div class="uploaded-time" style="width:85%"></div>
+                    <div class="played-time" style="width:70%"></div>
+                </div>
+                <span id="rewindInstruction" class="wcag-hidden">If you want to rewind click left or right button</span>
+                <p class="left-time" id="time">-1:57</p>
+                <div class="music-buttons">
+                    <div class="play-stop">
+                        <a href="#" class="stop" title="stop plying" role="button">
+                            <span></span>
+                        </a>
+                        <a href="#" class="play" aria-describedby="time" title="play song" role="button">
+                            <span></span>
+                        </a>
+                    </div>
+                    <a href="#" class="previous" title="previous song" role="button">
+                        <span></span>
+                    </a>
+                    <a href="#" class="next" title="next song" role="button">
+                        <span></span>
+                    </a>
+                    <a href="#" class="shuffle" title="shuffle songs" role="button">
+                        <span></span>
+                    </a>
+                    <a href="#" class="repeat" title="repeat song" role="button">
+                        <span></span>
+                    </a>
+                    <a href="#" class="heart" title="like this song" role="button">
+                        <span></span>
+                    </a>
+                    <a href="#" class="add" title="add new song" role="button">
+                        <span></span>
+                    </a>
+                    <a href="#" class="share" title="share this song" role="button">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="authentication wrapper">
+    <h2 tabindex="0" class="wcag-hidden">Authentication widget</h2>
+        <ul role="presentation">
+            <li class="mail active-li">
+                <label for="" class="middle"></label>
+                <input type="text" aria-label="Enter email address" placeholder="Email Address...">
+            </li>
+            <li class="password">
+                <label for="" class="middle"></label>
+                <input type="text" aria-label="Enter password" placeholder="Password...">
+            </li>
+        </ul>
+        <div class="buttons">
+            <a href="" class="sign-up" role="button">
+                <span class="center">sign up</span>
+            </a>
+            <a href="" class="sign-in" role="button">
+                <span class="center">sign in</span>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="messenger wrapper">
+    <h2 tabindex="0" class="wcag-hidden">Messanger widget</h2>
+        <header class="buttons">
+            <a href="#" class="menu" title="message menu" role="button">
+                <span class="center"></span>
+            </a>
+            <a href="#" class="add" title="add new dialog" role="button">
+                <span class="center"></span>
+            </a>
+        </header>
+        <ul class="chat">
+        <span id="m" class="wcag-hidden">Message is </span>
+            <li class="user1">
+                <a href="#" class="user middle" aria-describedby="name1 statusOnline">
+                    <img src="user.jpg" alt="photo of user1">
+                </a>
+                <div class="preview">
+                    <a href="#" aria-labelledby="m message1">
+                        <div class="name" id="name1">Yaroslav Lozhkin</div>
+                        <p id="message1">Allright got it!</p>
+                    </a>
+                </div>
+                <span class="status online middle"></span>
+                <span id="statusOnline" class="wcag-hidden">Online</span>
+            </li>
+            <li class="user2">
+                <a href="#" class="user middle" aria-describedby="name2 statusOffline">
+                    <img src="user.jpg" alt="photo of user2">
+                </a>
+                <div class="preview">
+                    <a href="#" aria-labelledby="m message2">
+                        <div class="name" id="name2">Michel Zenaty</div>
+                        <p class="sent" id="message2">Sent</p>
+                    </a>
+                </div>
+                <span class="status offline middle"></span>
+                <span id="statusOffline" class="wcag-hidden">Offline</span>
+            </li>
+            <li class="user3">
+                <a href="#" class="user middle" aria-describedby="name3">
+                    <img src="user.jpg" alt="photo of user3">
+                </a>
+                <div class="preview">
+                    <a href="#" aria-labelledby="m message3">
+                        <div class="name" id="name3">Weells Riley</div>
+                        <p class="typing" id="message3">Typing...</p>
+                    </a>
+                </div>
+                <span class="status middle"></span>
+            </li>
+            <li class="user4">
+                <a href="#" class="user middle" aria-describedby="name4">
+                    <img src="user.jpg" alt="photo of user4">
+                </a>
+                <div class="preview">
+                    <a href="#" aria-labelledby="m message4">
+                        <div class="name" id="name4">Matt Vicherms</div>
+                        <p class="not-delivered" id="message4">Not delivered</p>
+                    </a>
+                </div>
+                <span class="status middle"></span>
+            </li>
+            <li class="user5">
+                <a href="#" class="user middle" aria-describedby="name5 statusBUSY">
+                    <img src="user.jpg" alt="photo of user5">
+                </a>
+                <div class="preview">
+                    <a href="#" aria-labelledby="m message5">
+                        <div class="name" id="name5">Divya Manian</div>
+                        <p id="message5">You can download it on github or go</p>
+                    </a>
+                </div>
+                <span class="status busy middle"></span>
+                <span id="statusBUSY" class="wcag-hidden">busy</span>
+            </li>
+            <li class="user6">
+                <a href="#" class="user middle" aria-describedby="name6">
+                    <img src="user.jpg" alt="photo of user6">
+                </a>
+                <div class="preview">
+                    <a href="#" aria-labelledby="m message6">
+                        <div class="name" id="name6">Vin Thomas</div>
+                        <p id="message6">Thank you!</p>
+                    </a>
+                </div>
+                <span class="status middle"></span>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="dif-buttons wrapper">
+        <h2 tabindex="0" class="wcag-hidden">Group of buttons widget</h2>
+
+        <label for="valid" id="validID" class="wcag-hidden">Valid input</label>
+        <input type="text" class="valid" placeholder="Valid input" aria-labelledby="validID" id="valid">
+
+        <input type="checkbox" class="checkbox wcag-hidden" id="checkbox">
+        <label for="checkbox">
+            <span></span>
+        </label>
+
+        <input id="range"class="range" min="0" max="100" value="70" name="range" aria-labelledby="help" type="range"/>
+        <label id="help" for="range" class="wcag-hidden">Click the button left or right to change the value</label>
+
+        <input type="radio" name="radio-button1" class="radio radio1 wcag-hidden" id="radio1">
+        <label for="radio1">
+            <span class="center"></span>
+        </label>
+
+        <label for="invalid" id="invalidID" class="wcag-hidden">Invalid input</label>
+        <input type="text" class="invalid" placeholder="Invalid input" aria-labelledby="invalidID" id="invalid">
+
+        <input type="radio" name="radio-button2" class="radio radio2 wcag-hidden" id="radio2">
+        <label for="radio2">
+            <span class="center"></span>
+        </label>
+    </div>
+</body>
+
+</html>

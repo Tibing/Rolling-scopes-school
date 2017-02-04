@@ -1,0 +1,68 @@
+@each $fontGR in $fontList {
+    @font-face {
+        font-family: #{$fontGR};
+        src: url('../gotham_rounded/#{$fontGR}.otf');
+    }
+}
+
+.wrapper {
+    display: inline-block;
+    width: $widgetWidth;
+    margin: $globalMarging;
+    background: $mainColor4;
+}
+
+body {
+    font-family: $fontGRMedium;
+    background: $colorGreyLighten;
+    & > div {
+        color: $mainFontColor1;
+    }
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    @extend h2;
+    li {
+        list-style: none;
+        overflow: hidden;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transformCenter;
+}
+
+.buttons {
+    position: relative;
+    height: $buttonsHeight;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.active {
+    background: $mainColor2;
+    color: $mainFontColor2;
+}

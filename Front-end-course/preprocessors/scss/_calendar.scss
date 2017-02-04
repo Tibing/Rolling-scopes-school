@@ -1,0 +1,73 @@
+.calendar {
+    header {
+        color: $mainFontColor2;
+        background: $mainColor1;
+        position: relative;
+        height: $calendarHeight;
+        font-size: 18px;
+        a {
+            top: 29px;
+            display: inline-block;
+            @at-root .arrow {
+                background: url(../sprites.png);
+                position: absolute;
+            }
+            &.arrow-right {
+                right: 13px;
+                @include bgPositionWH(-126px, -3px, 12px, 23px);
+            }
+            &.arrow-left {
+                left: 13px;
+                @include bgPositionWH(-109px, -3px, 12px, 23px);
+            }
+            
+        }
+        .data {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 16px;
+            * {
+                @include textCenter;
+                margin: 0;
+            }
+            .year {
+                font-family: $fontGRBook;
+            }
+        }
+    }
+    table {
+        @include fontFamilySize(17px);
+        width: 100%;
+        border-collapse: collapse;
+        tr {
+            height: $calendarTrHeight;
+            th {
+                @include textCenter;
+            }
+            td {
+                @include textCenter;
+                position: relative;
+                a {
+                    display: inline-block;
+                    @include WH($calendarDataLinkHeight);
+                    @extend .center;
+                    line-height: $calendarDataLinkHeight;
+                    &:hover {
+                        color: $mainFontColor2;
+                        background: $mainColor2;
+                        @include border-radius();
+                    }
+                }
+            }
+            &:first-child {
+                color: desaturate($mainColor3, 40%);
+                line-height: $calendarTrThHeight;
+                height: $calendarTrThHeight;
+                background: $mainColor3;
+            }
+        }
+    }
+}

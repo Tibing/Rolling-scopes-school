@@ -1,0 +1,984 @@
+@font-face {
+    font-family: "GothamRounded-Medium";
+    src: url("gotham_rounded/GothamRounded-Medium.otf");
+}
+
+@font-face {
+    font-family: "GothamRounded-Book";
+    src: url("gotham_rounded/GothamRounded-Book.otf");
+}
+
+@font-face {
+    font-family: "GothamRounded-Bold";
+    src: url("gotham_rounded/GothamRounded-Bold.otf");
+}
+
+body {
+    font-family: "GothamRounded-Medium";
+    background: #efefef;
+}
+
+body > div {
+    color: #9d9d9d;
+}
+
+.wcag-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/***************/
+
+h2 {
+    margin: 0;
+}
+
+.converter a:focus,
+.weather a:focus,
+.follow-button a:focus,
+.authentication a:focus {
+    box-sizing: border-box;
+    border: 1px dashed black;
+}
+
+#description {
+    display: none;
+}
+
+
+/*********************/
+
+.wrapper {
+    display: inline-block;
+    width: 307px;
+    margin: 60px;
+    background: #ffffff;
+}
+
+li {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.center,
+.calendar td span,
+.music-buttons span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.buttons {
+    position: relative;
+    height: 64px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+}
+
+
+/****************************8*/
+
+.currency li {
+    border-bottom: 1px solid #9d9d9d;
+    position: relative;
+    height: 110px;
+}
+
+.currency li:last-child,
+.authentication li:last-child,
+.messenger li:last-child {
+    border-bottom: none;
+}
+
+.currency label {
+    display: inline-block;
+    text-align: center;
+    height: 54px;
+    width: 102px;
+    line-height: 54px;
+    border-right: 1px solid #9d9d9d;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.currency input {
+    font-family: "GothamRounded-Book";
+    text-align: right;
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 155px;
+    padding: 0 20px;
+    border: none;
+    color: #b8b8b8;
+}
+
+.convert-buttons {
+    background: #526e82;
+}
+
+.convert-buttons span,
+.weather-buttons span,
+.follow-button:before,
+.arrow,
+.music-buttons span,
+.authentication label,
+.messenger .buttons span,
+.preview .not-delivered:before,
+.preview .sent:before,
+.dif-buttons .checkbox + label > span {
+    background: url(sprites.png);
+    position: absolute;
+}
+
+.convert-buttons a {
+    display: block;
+    height: 100%;
+}
+
+.active,
+.convert-buttons li:hover,
+.weather-buttons li:hover {
+    background: #ff8989;
+    color: #ffffff;
+}
+
+.convert-buttons .convert:hover {
+    background: #526e82;
+}
+
+.convert-buttons .convert,
+.convert-buttons .add,
+.convert-buttons .move {
+    position: absolute;
+    height: 100%;
+}
+
+.convert-buttons .convert {
+    width: 102px;
+}
+
+.convert-buttons .add {
+    right: 78px;
+    width: 64px;
+}
+
+.convert-buttons .move {
+    right: 0;
+    width: 64px;
+}
+
+.convert-buttons .convert span {
+    left: 35px;
+    top: 26px;
+    background-position: 0 -10px;
+    width: 31px;
+    height: 12px;
+}
+
+.convert-buttons .add span {
+    right: 18px;
+    top: 18px;
+    background-position: -38px -3px;
+    width: 27px;
+    height: 27px;
+}
+
+.convert-buttons .move span {
+    right: 17px;
+    top: 17px;
+    background-position: -74px 0;
+    width: 30px;
+    height: 30px;
+}
+
+
+/***************************************/
+
+.calendar p,
+.calendar th,
+.calendar td {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.year {
+    font-family: "GothamRounded-Book";
+}
+
+.calendar header {
+    color: #ffffff;
+    background: #526e82;
+    position: relative;
+    height: 85px;
+    font-size: 18px;
+}
+
+.calendar span {
+    display: none;
+}
+
+.arrow {
+    top: 29px;
+    display: inline-block;
+    height: 23px;
+    width: 12px;
+}
+
+.arrow-left {
+    left: 13px;
+    background-position: -109px -3px;
+}
+
+.arrow-right {
+    right: 13px;
+    background-position: -126px -3px;
+}
+
+.calendar .data {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 16px;
+}
+
+.data * {
+    margin: 0;
+}
+
+.calendar table {
+    font-family: "GothamRounded-Book";
+    font-size: 17px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar tr:first-child {
+    color: #3dad99;
+    line-height: 55px;
+    height: 55px;
+    background: #4cd9c0;
+}
+
+.calendar tr {
+    height: 45px;
+}
+
+.calendar td {
+    position: relative;
+}
+
+.calendar td a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    line-height: 30px;
+}
+
+.calendar td .active,
+.calendar td a:hover {
+    color: #ffffff;
+    background: #ff8989;
+    border-radius: 50%;
+}
+
+
+/******************************88*/
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.weather-info1 {
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    padding: 8px;
+}
+
+.weather-info1 * {
+    font-size: 17px;
+    margin: 0;
+}
+
+.weather-info1 p:first-child,
+.weather-info1 span {
+    display: inline-block;
+    font-size: 40px;
+}
+
+.weather-info1 span {
+    margin-left: -5px;
+}
+
+.sliders-block {
+    height: 248px;
+    width: 307px;
+    position: relative;
+    color: #ffffff;
+    text-align: right;
+}
+
+.sliders-block img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.8s;
+}
+
+.sliders-block input {
+    display: none;
+}
+
+.sliders-block label {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background: #05aeb3;
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+    margin-left: -7px;
+    margin-right: 10px;
+    top: 90%;
+    transition: background 0.5s ease-out;
+}
+
+.sliders-block input:checked + label,
+.sliders-block label:hover {
+    background: rgba(7, 97, 100, 0.8);
+}
+
+.sliders-block input:checked + label + img {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.1s;
+}
+
+.weather-buttons {
+    font-family: "GothamRounded-Book";
+    font-size: 40px;
+}
+
+.weather-buttons li {
+    float: left;
+    width: 76.75px;
+    height: 64px;
+}
+
+.weather-buttons a {
+    line-height: 64px;
+    text-align: center;
+    display: block;
+    height: 100%;
+}
+
+.weather-buttons .menu,
+.weather-buttons .add {
+    position: relative;
+}
+
+.weather-buttons .add span {
+    display: block;
+    background-position: -142px -3px;
+    width: 27px;
+    height: 27px;
+}
+
+.weather-buttons .menu span {
+    display: block;
+    background-position: -173px -5px;
+    width: 43px;
+    height: 25px;
+}
+
+
+/***********************************88*/
+
+.player {
+    width: 728px;
+    height: 201px;
+}
+
+.album-info {
+    display: inline-block;
+    padding: 8px;
+}
+
+.album-info img {
+    width: 126px;
+    height: 126px;
+}
+
+.follow-button:before {
+    position: relative;
+    content: '';
+    left: 15px;
+    display: inline-block;
+    background-position: -2px -36px;
+    height: 13px;
+    width: 13px;
+}
+
+.follow-button {
+    position: relative;
+    font-family: "GothamRounded-Bold";
+    text-transform: uppercase;
+    line-height: 40px;
+    color: #ffffff;
+    width: 125px;
+    height: 40px;
+    background: #526e82;
+    margin-top: 10px;
+}
+
+.follow-button a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-left: 35px;
+    display: inline-block;
+}
+
+
+/*/////////////////////////////*/
+
+.music-block {
+    display: inline-block;
+    font-family: "GothamRounded-Book";
+    padding-left: 10px;
+    vertical-align: top;
+}
+
+.song-info h4,
+.song-info h5 {
+    margin-top: 25px;
+    font-size: 23px;
+    margin-bottom: 0;
+}
+
+.song-info h5 {
+    margin-top: 0;
+    color: #d6d6d6;
+}
+
+div[class$='time'] {
+    border-radius: 5px;
+}
+
+.all-time {
+    position: relative;
+    display: inline-block;
+    height: 9px;
+    width: 488px;
+    background: #efefef;
+}
+
+.all-time div {
+    position: absolute;
+    height: 100%;
+}
+
+.uploaded-time {
+    background: #bbfdf1;
+}
+
+.played-time {
+    background: #4cd9c0;
+}
+
+.left-time {
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.music-buttons {
+    margin-top: 10px;
+    position: relative;
+    height: 45px;
+}
+
+.play-stop {
+    position: relative;
+}
+
+.music-buttons a {
+    box-sizing: border-box;
+    position: absolute;
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.play,
+.stop {
+    background: #4cd9c0;
+}
+
+.play-stop ~ a span {
+    width: 23px;
+    height: 18px;
+    position: absolute;
+}
+
+.play span {
+    background-position: -22px -36px;
+    width: 13px;
+    height: 15px;
+}
+
+.stop span {
+    background: #ffffff;
+    width: 15px;
+    height: 15px;
+}
+
+.play:hover {
+    display: none;
+}
+
+.music-buttons a:hover {
+    border: 3px solid #4cd9c0;
+}
+
+.previous {
+    left: 70px;
+}
+
+.previous span {
+    background-position: -39px -35px;
+}
+
+.next {
+    left: 140px;
+}
+
+.next span {
+    background-position: -67px -35px;
+}
+
+.shuffle {
+    left: 210px;
+}
+
+.shuffle span {
+    background-position: -95px -35px;
+}
+
+.repeat {
+    left: 280px;
+}
+
+.repeat span {
+    background-position: -122px -36px;
+}
+
+.heart {
+    left: 350px;
+}
+
+.heart span {
+    background-position: -151px -36px;
+}
+
+.music-buttons .add {
+    left: 420px;
+}
+
+.music-buttons .add span {
+    background-position: -181px -33px;
+    height: 23px;
+}
+
+.share {
+    left: 490px;
+}
+
+.share span {
+    background-position: -191px -57px;
+}
+
+
+/*************************************8*/
+
+.authentication li {
+    position: relative;
+    height: 73px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.authentication input {
+    font-family: "GothamRounded-Book";
+    font-size: 20px;
+    height: 100%;
+    padding: 0 66px;
+    border: none;
+}
+
+.authentication .active-li {
+    border-left: 4px solid #ff8989;
+}
+
+.authentication label {
+    display: inline-block;
+    width: 21px;
+    height: 24px;
+    margin-left: 22px;
+}
+
+.authentication .mail label {
+    background-position: -57px -55px;
+}
+
+.authentication .password label {
+    background-position: -31px -54px;
+}
+
+.authentication .buttons {
+    background: #7191a8;
+    font-family: "GothamRounded-Bold";
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.authentication .buttons a {
+    position: relative;
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+    white-space: nowrap;
+}
+
+.authentication .sign-up {
+    color: #637e92;
+}
+
+.authentication .sign-in {
+    background: #526e82;
+    color: #ffffff;
+}
+
+
+/**************************************8*/
+
+.messenger header {
+    background: #4cd9c0;
+}
+
+.messenger .menu,
+.messenger .add {
+    display: inline-block;
+    height: 100%;
+    width: 75px;
+    position: absolute;
+}
+
+.messenger .menu,
+.messenger .add:hover {
+    background: #41c0a9;
+}
+
+.messenger .add {
+    right: 0;
+}
+
+.messenger header span {
+    width: 33px;
+    height: 25px;
+}
+
+.messenger .menu span {
+    background-position: -89px -55px;
+}
+
+.messenger .add span {
+    background-position: -125px -55px;
+}
+
+.chat li {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.chat .user {
+    height: 50px;
+    width: 50px;
+    margin-left: 16px;
+}
+
+.chat a {
+    display: block;
+}
+
+.chat img {
+    box-sizing: border-box;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.chat li:hover {
+    background: rgba(76, 217, 192, 0.25);
+}
+
+.chat img:hover {
+    border: 2px solid rgba(76, 217, 192, 0.5);
+}
+
+.chat .preview {
+    font-size: 18px;
+    width: 190px;
+    margin-left: 85px;
+    padding-top: 20px;
+    padding-bottom: 14px;
+}
+
+.chat .preview p {
+    font-family: "GothamRounded-Book";
+    font-size: 14px;
+    margin: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat .status {
+    right: 0;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.chat .online {
+    background: #4cd9c0;
+}
+
+.chat .offline {
+    background: #ec747d;
+}
+
+.chat .busy {
+    background: #56e5f6;
+}
+
+.preview .sent:before,
+.preview .not-delivered:before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    height: 9px;
+    margin-right: 7px;
+}
+
+.preview .sent:before {
+    background-position: -159px -66px;
+    width: 14px;
+}
+
+.preview .not-delivered:before {
+    background-position: -177px -65px;
+    width: 9px;
+}
+
+
+/***********************************/
+
+.dif-buttons {
+    height: 200px;
+    font-family: "GothamRounded-Book";
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+.dif-buttons * {
+    box-sizing: border-box;
+}
+
+.dif-buttons .valid,
+.dif-buttons .invalid {
+    vertical-align: top;
+    padding: 0 14px;
+    width: 210px;
+    height: 51px;
+    border-radius: 15px;
+}
+
+.dif-buttons .valid {
+    border: 2px solid #4cd9c0;
+    color: #4cd9c0;
+}
+
+.dif-buttons .invalid {
+    border: 2px solid #ff8989;
+    color: #ff8989;
+}
+
+
+/*******************************/
+
+.dif-buttons .checkbox,
+.dif-buttons .radio,
+.dif-buttons .checkbox + label {
+    height: 51px;
+    width: 51px;
+    position: absolute;
+    margin-left: 16px;
+}
+
+.dif-buttons .checkbox + label {
+    position: relative;
+    display: inline-block;
+    border-radius: 15px;
+    border: 2px solid #ff8989;
+}
+
+
+/*******************************/
+
+.dif-buttons .checkbox:checked + label > span {
+    left: 11px;
+    top: 15px;
+    background-position: -1px -56px;
+    width: 27px;
+    height: 18px;
+}
+
+.dif-buttons .range {
+    cursor: pointer;
+    width: 211px;
+    margin: 24px 0;
+}
+
+.dif-buttons .range::-moz-range-track {
+    height: 8px;
+    background: #99b5c9;
+    border-radius: 20px;
+}
+
+.dif-buttons .range::-webkit-slider-runnable-track {
+    height: 8px;
+    background: #99b5c9;
+    border-radius: 20px;
+}
+
+.dif-buttons .range::-ms-track {
+    height: 8px;
+    background: #99b5c9;
+    border-radius: 20px;
+}
+
+.dif-buttons .range::-moz-range-thumb {
+    height: 18px;
+    width: 18px;
+    background: #526e82;
+    border-radius: 50%;
+    border: none;
+}
+
+.dif-buttons .range::-webkit-slider-thumb {
+    height: 18px;
+    width: 18px;
+    background: #526e82;
+    border-radius: 50%;
+    border: none;
+}
+
+.dif-buttons .range::-ms-thumb {
+    height: 18px;
+    width: 18px;
+    background: #526e82;
+    border-radius: 50%;
+    border: none;
+}
+
+.dif-buttons .range::-moz-range-progress {
+    height: 8px;
+    background: #526e82;
+    border-radius: 20px;
+}
+
+.dif-buttons .radio + label {
+    margin-left: 19px;
+    position: relative;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+}
+
+.dif-buttons .radio1 + label {
+    margin-bottom: 8px;
+    border: 2px solid #dddddd;
+}
+
+.dif-buttons .radio2 + label {
+    margin-top: 5px;
+    border: 2px solid #4cd9c0;
+}
+
+.dif-buttons .radio:checked + label > span {
+    position: absolute;
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+}
+
+.dif-buttons .radio1:checked + label > span {
+    background: #dddddd;
+}
+
+.dif-buttons .radio2:checked + label > span {
+    background: #4cd9c0;
+}

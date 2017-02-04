@@ -1,0 +1,99 @@
+.weather {
+    .sliders-block {
+        @include WH($weatherWidth, $weatherHeight);
+        position: relative;
+        color: $mainFontColor2;
+        text-align: right;
+        .weather-info {
+            z-index: 100;
+            position: absolute;
+            bottom: 0;
+            text-align: left;
+            padding: 8px;
+            * {
+                font-size: 17px;
+                margin: 0;
+            }
+            p:first-child {
+                display: inline-block;
+                font-size: 40px;
+            }
+            span {
+                @extend p:first-child;
+                margin-left: -5px;
+            }
+        }
+        img {
+            @include WH(100%);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.8s;
+        }
+        input {
+            display: none;
+            &:checked + label {
+                background: $darkenMainColor3;
+            }
+            &:checked + label + img {
+                visibility: visible;
+                opacity: 1;
+                transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.1s;
+            }
+        }
+        label {
+            display: inline-block;
+            @include WH($weatherSlidersPointer);
+            @include border-radius(5px);
+            background: desaturate($mainColor3, 10%);
+            cursor: pointer;
+            z-index: 100;
+            position: relative;
+            margin-left: -7px;
+            margin-right: 10px;
+            top: 90%;
+            transition: background 0.5s ease-out;
+            &:hover {
+                background: $darkenMainColor3;
+            }
+        }
+    }
+    .weather-buttons {
+        @include fontFamilySize(40px);
+        li {
+            float: left;
+            @include WH($weatherButtonWidth, $buttonsHeight);
+            &:hover {
+                @extend .active;
+            }
+            a {
+                line-height: $buttonsHeight;
+                text-align: center;
+                display: block;
+                height: 100%;
+                span {
+                    @extend .arrow;
+                }
+            }
+            &.add {
+                position: relative;
+                span {
+                    display: block;
+                    @include bgPositionWH(-142px, -3px, 27px);
+                }
+            }
+            &.menu {
+                position: relative;
+                span {
+                    display: block;
+                    @include bgPositionWH(-173px, -5px, 43px, 25px);
+                }
+            }
+        }
+    }
+}
